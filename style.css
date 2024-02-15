@@ -1,0 +1,103 @@
+html{
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	align-items: center;
+	background: #17171C;
+	display: flex;
+	font-family: 'WorkSans';
+	font-display: swap;
+	height: inherit;
+	justify-content: center;
+}
+
+.wrapper{
+	backdrop-filter: blur(5.5px);
+	-webkit-backdrop-filter: blur(5.5px);
+	background: rgba(255,255,255,0.75);
+	border: 1px solid rgba(255,255,255,0.01);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+	color: #232323;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	background: #17171C;
+	border: 1px solid rgba(255, 255, 255, 0.34);
+	flex-basis: 400px;
+	height: 560px;
+	padding: 20px 35px;
+}
+
+.screen{
+	font-family: 'Arial';
+	font-size: 60px;
+	color: white;
+	text-align: right;
+}
+
+
+.calc-button-row{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.calc-button{
+	backdrop-filter: blur(5.5px);
+	-webkit-backdrop-filter: blur(5.5px);
+	background: #1E1E1E;
+	border: 1px solid rgba(255,255,255,0.01);
+	border-radius: 16px;
+	color: white;
+	flex-basis: 20%;
+	font-family: Arial;
+	font-size: 32px;
+	height: 65px;
+}
+
+
+.calc-button:last-child{
+	backdrop-filter: blur(5.5px);
+	-webkit-backdrop-filter: blur(5.5px);
+	background: #1E1E1E;
+	border: 1px solid rgba(255,255,255,0.01);
+	border-radius: 16px;
+	color: white;
+	background: #4B5EFC;
+}
+
+
+.calc-button:last-child:hover{
+	background-color: white;
+	color: inherit;
+}
+
+
+.calc-button:hover{
+	background-color: white;
+	color: inherit;
+}
+
+.triple{
+	flex-basis: 73%;
+}
+
+.double{
+	flex-basis: 47%;
+}
+
+h1.main{
+	font-family: Arial;
+	font-size: 96px;
+	color: white;	
+}
