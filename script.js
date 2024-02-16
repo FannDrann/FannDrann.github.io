@@ -1,5 +1,3 @@
-const screen = document.querySelector('.screen');
-
 function buttonClick(event) {
     const buttonText = event.target.innerText;
 
@@ -20,16 +18,14 @@ function buttonClick(event) {
             screen.textContent = buttonText;
         } else if (!screen.textContent.includes('.') || buttonText !== '.') {
             if (!Number.isInteger(parseFloat(screen.textContent)) || buttonText !== '.') {
-                screen.textContent += buttonText;
+                if (screen.textContent.length < 10) {
+                    screen.textContent += buttonText;
+                }
             }
         } else {
-            screen.textContent = screen.textContent.slice(1) + buttonText;
+            if (screen.textContent.length < 10) {
+                screen.textContent = screen.textContent.slice(1) + buttonText;
+            }
         }
     }
 }
-
-const buttons = document.querySelectorAll('.calc-button');
-
-buttons.forEach(button => {
-    button.addEventListener('click', buttonClick);
-});
